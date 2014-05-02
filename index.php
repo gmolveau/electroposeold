@@ -20,8 +20,7 @@
 </head>
 
 <?php
-$user = "root"; //user DB
-$pass = "_<WyBeCT5,3"; // passwd user DB
+require_once('auth.php');
 $liensc = array("0" => "0",); //init lien soundcloud
 $lienyt = array("0" => "0",); //init lien youtube
 $artwork = array("0" => "0",); //init lien artwork
