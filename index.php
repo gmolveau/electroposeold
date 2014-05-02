@@ -20,7 +20,7 @@
 </head>
 
 <?php
-require_once('auth.php');
+require_once('credentials.php');
 $liensc = array("0" => "0",); //init lien soundcloud
 $lienyt = array("0" => "0",); //init lien youtube
 $artwork = array("0" => "0",); //init lien artwork
