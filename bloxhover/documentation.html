@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BloxHover Documentaition</title>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+        <script src="shCore.js"></script> 
+        <script src="shBrushXml.js"></script>
+        <script src="shBrushJScript.js"></script>
+
+        <link rel="stylesheet" href="shCore.css" />
+        <link rel="stylesheet" href="shCoreEclipse.css" /> 
+        <script>
+            SyntaxHighlighter.all();
+        </script>       
+        <style>
+            body {
+                font-family: Verdana, sans-serif;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            #wrapper {width: 960px; margin: 0 auto;}
+        </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+    <body>
+        <div id='wrapper'>
+            <h1 class='title' style='font-size: 30px;'>BloxHover - jQuery Image Hover Effects Plugin</h1>
+            <hr /><br /><br />
+
+            <h1>1) Installation</h1>
+            <p>Include latest jQuery version and BloxHover plugin in the head secion of your document. You can also include easing library for smoother animations, but it's not required, plugin can work without it.</p>
+            <pre class='brush: html'>
+                &lt;head>
+                    &lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js">&lt;/script> 
+                    &lt;script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">&lt;/script> 
+                    &lt;script src="bloxhover.jquery.min.js">&lt;/script> 
+                &lt;/head>
+            </pre>
+            <br /><br /><br /><br />
+
+            <h1>2) HTML Structure and Usage</h1>
+            <p>First create HTML code like this:</p>
+            <pre class='brush: html'>
+                    &lt;div class="mydiv">
+                        &lt;img src="image.jpg"/>
+                        &lt;div>Stuff that you put in this div will be shown in hover! Any HTML Code can go here&lt;/div>
+                    &lt;/div>
+            </pre>
+            <p>Then, all we have to do is to call BloxHover. It should be called on the div that wraps the image and inner content, like this:</p>
+            <pre class='brush: javascript'>
+                    &lt;script> 
+                        $(document).ready(function() {
+                            $('.mydiv').bloxhover();
+                        });
+                    &lt;/script>
+            </pre>
+            <p>And now, BloxHover effect will work on all .mydiv elements that you have on your page.</p>
+
+
+            <br /><br /><br /><br />
+
+            <h1>3) Parameters</h1>
+            BloxHover can be configured with several parameters. You can set them when you call the BloxHover plugin like this:
+            <pre class='brush: javascript'>
+                    &lt;script> 
+                        $(document).ready(function() {
+                            $('.mydiv').bloxhover({delay: 100});
+                        });
+                    &lt;/script>
+            </pre>         
+<br /><br />
+            <h3> All Options
+            <p>Here you can see all possible parameters that BloxHover can take:</p>
+                <pre class='brush: javascript'>
+&lt;script> 
+    $(document).ready(function() {
+        $('.mydiv').bloxhover({
+            effect: "vertical", // accepted strings: 'square', 'square reveal', 'vertical', 'vertical reveal', 'vertical alternate', 'vertical alternate reveal', 'horizontal', 'horizontal reveal', 'horizontal alternate', 'horizontal alternate reveal'
+            sliceCount: 8, // the number of slices 
+            color: 'rgba(0, 0, 0, 0.5)', //rgba color of the slices
+            duration: 300, //how long should the animation of each slice last
+            delay: 100 // delay between slice animations
+        });
+    });
+&lt;/script>
+                </pre>         
+        </h3></div>
+    </body>
+</html>

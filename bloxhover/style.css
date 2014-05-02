@@ -1,0 +1,148 @@
+body {
+    padding-bottom: 200px;
+}
+#wrap {width: 960px; margin: 0 auto;}
+#header h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #1d1d1d;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 10px 0;
+
+    float: left;
+}
+#header h1 span {
+    font-weight: 700;
+}
+#header h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0;
+    color: #1d1d1d;
+    font-size: 20px;
+    font-weight: 400;  
+    float: right;
+    display: inline;               
+
+}
+.clear {clear: both;}
+hr {background: none; color: transparent; border-bottom: 1px solid #1d1d1d; margin-bottom: 15px;}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+}
+
+#menu li {
+    float: left;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background: #7EA843;
+
+}
+
+#menu li a {
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s; /* Safari */
+}
+
+#menu li.active {
+    background: #1d1d1d !important;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+#menu li a:hover {
+    background: #1d1d1d;
+}
+
+#styleselect {
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    background: #1d1d1d;
+    color: #fff;
+    margin-right: 10px;
+    padding:54px 20px 53px;
+}
+
+.imgdivs h1 {
+    font-family: 'Passion One';
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+
+    text-shadow: 1px 1px 1px #1d1d1d;
+    filter: dropshadow(color=#1d1d1d, offx=1, offy=1);
+}
+
+p {
+    font-family: 'Open Sans';
+    color: #1d1d1d;
+}
+
+.imgdivs h3 {
+    font-family: 'Open Sans';
+    margin: 5px 0 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: normal;
+
+    text-shadow: 1px 1px 1px #1d1d1d;
+    filter: dropshadow(color=#1d1d1d, offx=1, offy=1);    
+}
+
+.leftCol {
+    float: left;
+    width: 450px;
+}
+
+.rightCol {
+     width: 450px;
+    float: right;
+}
+
+.codeTitle {
+    font-size: 24px;
+    cursor: pointer;
+    color: #1d1d1d;
+    font-family: 'Open Sans';
+    text-align: center;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s; /* Safari */
+}
+
+.codeTitle:hover, .docs a:hover {
+    color: #7EA843;
+}
+
+.codeWrap .code {
+    display: none;
+}
+
+.docs {
+     font-size: 36px;
+     text-align: center;
+     margin-top: 80px;
+    color: #1d1d1d;
+    font-family: 'Open Sans';   
+}
+
+.docs a {
+    color: #1d1d1d;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s; /* Safari */
+}
